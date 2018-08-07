@@ -1,0 +1,160 @@
+html {
+    box-sizing: border-box;
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* 16px x 1.375 = 22px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* ----------------------------------------------- */
+
+/* MAIN CONTENT */
+
+/* ----------------------------------------------- */
+
+.slider {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bannerText-right {
+    right: 2%;
+}
+
+.bannerText-left {
+    left: 2%;
+}
+
+.banner__text {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    width: 10%;
+    height: 100vh;
+    z-index: 99999;
+}
+
+.banner__text p {
+    color: rgb(80, 80, 80);
+    margin: 3px 0;
+    color: rgb(151, 151, 151);
+}
+
+.banner__text p:last-child {
+    color: rgb(44, 44, 44);
+}
+
+.banner__text h3 {
+    color: rgb(30, 68, 147);
+    font-size: 2rem;
+    margin: 5px 0;
+}
+
+.banner__text h4 {
+    color: rgb(30, 68, 147);
+    font-size: 30px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.banner-left {
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 15%;
+    z-index: 9;
+    transition: 0.8s all;
+}
+
+.banner-right {
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 15%;
+    z-index: 9;
+    transition: 0.8s all;
+}
+
+.attachedParallax {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    transition: 1s all;
+}
+
+.screen1 {
+    width: 70%;
+    background: rgb(219, 219, 219);
+    height: 3000px;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+.pushDiv {
+    height: 1500px;
+}
+
+.parallax {
+    background-image: url(../img/imgParalax.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 1px;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------------------------- */
+
+/* IMG COMPARISON SLIDER */
+
+/* ----------------------------------------------- */
+
+.container {
+    width: 100vw;
+    margin: auto;
+}
+
+#inked-painted {
+    position: relative;
+    font-size: 0;
+    -ms-touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+#inked-painted img {
+    width: 100%;
+    height: auto;
+}
+
+#colored {
+    background-image: url(../img/img22.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+#inked-painted:hover {
+    cursor: col-resize;
+}
