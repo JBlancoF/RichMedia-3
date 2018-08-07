@@ -47,38 +47,16 @@ function scrolls() {
 		bannerRight.style.visibility = 'hidden';
 	}
 
-	if (scrolledBotton > 1655){
+	if (scrolledBotton > 1655) {
 		parallax.style.opacity = 1;
 		parallax.style.visibility = 'visible';
 	}
 
-	if (scrolledBotton < 1655){
+	if (scrolledBotton < 1655) {
 		parallax.style.opacity = 0;
 		parallax.style.visibility = 'hidden';
 	}
 
+}
 
-
-		// if( scrolledBotton > 960   && scrolledBotton < 1655){
-		// 	bannerLeft.style.opacity = 1;
-		// 	bannerRight.style.opacity = 1;
-		// 	bannerLeft.style.visibility = 'visible';
-		// 	bannerRight.style.visibility = 'visible';
-
-		// }else if( scrolledBotton > 1655){
-		// 	parallax.style.display = 'block';
-		// }	
-
-		// if( scrolledBotton < 1655 &&  scrolledBotton > 959){
-		// 	parallax.style.display = 'none';
-		// }else if(scrolledBotton < 959){
-		// 	bannerLeft.style.display = 'none';
-		// 	bannerRight.style.display = 'none';
-
-		// }
-
-
-
-	}
-
-	window.addEventListener('scroll', scrolls)
+window.addEventListener('scroll', scrolls)
